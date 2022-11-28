@@ -7,7 +7,10 @@ button_get.addEventListener('click', function(){
     console.log(input_sex)
 })
 
-if(input_sex = 'Maggiorenne'){
+if(input_sex == 'Maggiorenne'){
+    let cost=input_tag * 0.21
+    console.log(cost)
+
     
 }
 
