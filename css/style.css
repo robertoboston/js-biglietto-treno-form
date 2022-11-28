@@ -34,9 +34,16 @@ body{
     padding: 40px;
 }
 
-.button{
+.button-position{
     display: flex;
     justify-content: center;
+}
+
+.button-position button{
+    background-color: lightgrey;
+    color: blueviolet;
+    padding: 5px 10px;
+    border-style: none;
 }
 
 #button-genera{
@@ -45,6 +52,8 @@ body{
 
 label{
     display: block;
+    color: navy;
+    margin: 10px;
 }
 
 .section-2{
@@ -65,5 +74,13 @@ label{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+
+input, select{
+    border-color: blueviolet;
+}
+
+.background{
+    background-color: grey;
 }
 
