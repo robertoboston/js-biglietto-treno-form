@@ -8,15 +8,65 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <form action="#">
-        <input type="text" name="km" id="km">
-        <select name="age" id="age">
-            <option value="Minorenne">Minorenne</option>
-            <option value="Maggiorenne">Maggiorenne</option>
-            <option value="Over-65">Over-65</option>
-        </select>
-    </form>
-    <button id="button-genera">Genera</button>
+    <section class="section-1">
+        <h1 class="title">CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
+    <div class="container">
+        <div class="form">
+            <div class="col-30"> 
+                <label class="block" for="nome-cognone">nome e cognome</label>
+                <input type="text" name="nome-cognome" id="nome-cognome">
+            </div>
+            <div class="col-30">
+                <label for="km">Km da percorrere</label>
+                <input type="text" name="km" id="km">
+            </div>
+            <div class="col-30">
+                <label for="age">fascia d'età</label>
+                <select name="age" id="age">
+                    <option value="Minorenne">Minorenne</option>
+                    <option value="Maggiorenne">Maggiorenne</option>
+                    <option value="Over-65">Over-65</option>
+                </select>
+            </div>
+        </div>
+        <div class="button">
+            <button id="button-genera">Genera</button>
+            <button id="button-annulla">Annulla</button>
+        </div>
+    </div>
+    </section>
+    
+
+    <section class="section-2">
+        <h1 class="title">IL TUO BIGLIETTO</h1>
+    <div class="container">
+        <h2>DETTAGLI PASSEGGERI</h2>
+        <hr>
+        <div class="row">
+            <div class="col">
+                <h3>NOME PASSEGGERO</h3>
+                <span id="name"></span>
+            </div>
+            <div class="col display-flex">
+                <h3>Offerta</h3>
+                <span>Biglietto standard</span>
+            </div>
+            <div class="col display-flex">
+                <h3>Carrozza</h3>
+                <span>5</span>
+            </div>
+            <div class="col display-flex">
+                <h3>Codice CP</h3>
+                <span>92911</span>
+            </div>
+            <div class="col display-flex">
+                <h3>Costo biglietto</h3>
+                <span id="costo"></span>
+            </div>
+        </div>
+        <hr>
+    </div>
+    </section>
     <script type="text/javascript" src="./js/script.js"></script>
 </body>
 </html>
