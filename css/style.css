@@ -56,6 +56,11 @@ label{
     margin: 10px;
 }
 
+input, option, select{
+    text-align: center;
+    padding: 5px;
+}
+
 .section-2{
     margin-top: 50px;
 }
